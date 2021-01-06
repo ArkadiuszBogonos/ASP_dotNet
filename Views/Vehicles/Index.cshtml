@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WypozyczalniaPojazdowElektrycznych3.Models.Vehicle>
+
+@{
+    ViewData["Title"] = "Egzemplarze pojazdów";
+}
+
+<h1>Egzemplarze</h1>
+
+<p>
+    <a asp-action="Create">Dodaj nowy egzemplarzz</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Model
+            </th>
+            <th>
+                Identyfikator
+            </th>
+            <th>
+                Kolor
+            </th>
+            <th>
+                Termin wypożyczenia
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model.ManufacturerId)@Html.DisplayFor(modelItem => item.Model.CategoryId)@Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RentTermin)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

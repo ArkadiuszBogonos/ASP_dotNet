@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WypozyczalniaPojazdowElektrycznych3.Models.Manufacturer>
+
+@{
+    ViewData["Title"] = "Producenci";
+}
+
+<h1>Producenci</h1>
+
+<p>
+    <a asp-action="Create">Dodaj nowego producenta</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nazwa producenta
+            </th>
+            <th>
+                Modele
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @foreach(var m in item.Models)
+                {
+                    @m.Name<br/>
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
