@@ -1,14 +1,12 @@
 ﻿@model IEnumerable<WypozyczalniaPojazdowElektrycznych3.Models.Vehicle>
 
 @{
-    ViewData["Title"] = "Egzemplarze pojazdów";
+    ViewData["Title"] = "Wypożyczalnia";
 }
 
-<h1>Egzemplarze</h1>
+<h1>Wypożyczalnia</h1>
 
-<p>
-    <a asp-action="Create">Dodaj nowy egzemplarz</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -16,7 +14,10 @@
                 Model
             </th>
             <th>
-                Identyfikator
+                Marka
+            </th>
+            <th>
+                Kategoria
             </th>
             <th>
                 Kolor
@@ -25,23 +26,28 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+        @foreach (var item in Model)
+        {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Model.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Model.ManufacturerId)@Html.DisplayFor(modelItem => item.Model.CategoryId)@Html.DisplayFor(modelItem => item.Id)
+                @Html.DisplayFor(modelItem => item.Model.Manufacturer.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model.Category.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Color)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edytuj</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Szczegóły</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Usuń</a>
+                <form method="post">
+                    <input type="date" />
+                    <input type="submit" value="Wypożycz" />
+                </form>
             </td>
         </tr>
-}
+        }
     </tbody>
 </table>

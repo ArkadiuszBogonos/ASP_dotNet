@@ -8828,11 +8828,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Komputer PC\\source\\repos\\WypozyczalniaPojazdowElektrycznych3\\WypozyczalniaPojazdowElektrycznych3.csproj",
+      "projectUniqueName": "C:\\Users\\Komputer PC\\source\\repos\\ASP_dotNet\\WypozyczalniaPojazdowElektrycznych3.csproj",
       "projectName": "WypozyczalniaPojazdowElektrycznych3",
-      "projectPath": "C:\\Users\\Komputer PC\\source\\repos\\WypozyczalniaPojazdowElektrycznych3\\WypozyczalniaPojazdowElektrycznych3.csproj",
+      "projectPath": "C:\\Users\\Komputer PC\\source\\repos\\ASP_dotNet\\WypozyczalniaPojazdowElektrycznych3.csproj",
       "packagesPath": "C:\\Users\\Komputer PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Komputer PC\\source\\repos\\WypozyczalniaPojazdowElektrycznych3\\obj\\",
+      "outputPath": "C:\\Users\\Komputer PC\\source\\repos\\ASP_dotNet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "olxqkqcg6+gEgZtOzyPFYLwvUbfIX52uBxuQJnQgbfkR3+voDd/zXrGKmU/CiNlt+CBPPUNri3QWxY6sNbHbDQ==",
+  "dgSpecHash": "klHDpR0UssDBNgSMtqtkbTXtv8QyEXXmevvzn2tExYQjVYgrZ6FaOqI1qUOaZ6KMxCX2K3YJzc3RKQILcUB40g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Komputer PC\\source\\repos\\WypozyczalniaPojazdowElektrycznych3\\WypozyczalniaPojazdowElektrycznych3.csproj",
+  "projectFilePath": "C:\\Users\\Komputer PC\\source\\repos\\ASP_dotNet\\WypozyczalniaPojazdowElektrycznych3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Komputer PC\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Komputer PC\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

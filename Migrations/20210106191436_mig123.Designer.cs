@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WypozyczalniaPojazdowElektrycznych3.Models;
 
 namespace WypozyczalniaPojazdowElektrycznych3.Migrations
 {
     [DbContext(typeof(ElectricVehiclesRentalContext))]
-    partial class ElectricVehiclesRentalContextModelSnapshot : ModelSnapshot
+    [Migration("20210106191436_mig123")]
+    partial class mig123
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

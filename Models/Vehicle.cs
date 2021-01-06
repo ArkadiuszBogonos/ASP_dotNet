@@ -18,7 +18,7 @@ namespace WypozyczalniaPojazdowElektrycznych3.Models
         public string Color { get; set; }
 
         [DataType(DataType.Date)]
-        public DateTime RentTermin { get; set; }
+        public DateTime? RentTermin { get; set; }
 
     }
 }
