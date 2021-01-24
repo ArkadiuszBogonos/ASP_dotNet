@@ -21,7 +21,7 @@ namespace WypozyczalniaPojazdowElektrycznych3.Controllers
         // GET: Rent
         public async Task<IActionResult> Index()
         {
-            var electricVehiclesRentalContext = _context.Vehicles.Include(v => v.Model);
+            var electricVehiclesRentalContext = _context.Vehicles.Include(v => v.Model).ThenInclude(c => c.Category).Include(v => v.Model).ThenInclude(m => m.Manufacturer).Where(v => v.RentTermin != null);
             return View(await electricVehiclesRentalContext.ToListAsync());
         }
 
